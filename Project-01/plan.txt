@@ -1,0 +1,22 @@
+
+Numeric Features: 
+age, 
+education.num, 
+capital.gain, 
+capital.loss, 
+hours.per.week (+ maybe fnlwgt)
+                                → Apply standardization (and log-transform skewed ones).
+
+Categorical Features: 
+workclass, 
+marital.status, 
+occupation, 
+relationship, 
+race, 
+sex, 
+native.country
+                                → Apply One-Hot Encoding (binary encode sex).
+
+
+
+Target (income): Binary encode (0/1).
