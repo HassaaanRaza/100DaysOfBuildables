@@ -13,7 +13,7 @@ def main():
     st.set_page_config(page_title="Income Prediction", page_icon="💼")
     st.title("💼 INCOME PREDICTION")
 
-    df = get_dataset()
+    
     model = load_model()
 
     # taking input numeric data
@@ -80,9 +80,6 @@ def main():
 def load_model():
     return joblib.load("model_pipeline.joblib")
 
-@st.cache_data
-def get_dataset():
-    return pd.read_csv("clean_adult.csv")
 
 
 
