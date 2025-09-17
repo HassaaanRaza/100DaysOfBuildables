@@ -1,5 +1,5 @@
 import streamlit as st
-import joblib
+from sklearn.externals import joblib
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
